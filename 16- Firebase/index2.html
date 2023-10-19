@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Cuerpo</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    <script src="app-16.js"></script> 
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo right">Lista</a>
+          <!-- Estos son los botones del menú de arriba: -->
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <form action="add-tarea-form">
+            <input type="text" name="titulo" placeholder="Agregar tarea">
+            <!--Agrego un botón para agregar las tareas a la lista:-->
+            <button class="waves-effect waves-light btn">Agregar tarea</button>
+        </form>     
+        
+        <ul class="collection" id="lista-tareas">
+            <li class="collection-header"><h4>First Names</h4></li> 
+            <li class="collection-item">
+                <div>  
+                    <span>Tarea 1</span>
+                    
+                        <i class="material-icons secondary-content">delete</i>
+                        <a href="#modal1" class="modal-trigger secondary-content ">
+                            <i class="material-icons">edit</i>
+                    </a>
+                </div>
+            </li>
+        </ul>   
+         
+         
+          <button data-target="modal1" class="btn modal-trigger">modal1</button>
+          <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Actualizar</h4>
+                 <p>Contenido a Actualizar</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
